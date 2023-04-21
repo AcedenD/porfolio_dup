@@ -15,7 +15,7 @@ header {
 
 
 header nav .nav-link.active{
-    color: green !important;
+    color: #35a22c !important;
 }
 
 header nav .nav-item {
@@ -27,7 +27,7 @@ header nav .nav-item::before{
     position: absolute;
     height: 2px;
     width: 0;
-    background-color: green;
+    background-color: #35a22c;
     bottom: 0;
     left: 0;
 }
@@ -67,7 +67,7 @@ header nav .nav-item:hover .nav-link{
 }
 
 .cyber_carousel .carousel-inner h2{
-    font-size: 70px;
+    font-size: 56px;
 }
 
 .cyber_carousel .carousel-item{
@@ -107,9 +107,10 @@ header nav .nav-item:hover .nav-link{
 
 
 .cyber_carousel .carousel-indicators button{
-    width: 15px;
-    height: 15px;
+    width: 12px;
+    height: 12px;
     border-radius: 50%;
+    margin-bottom: 70px;
 }
 
 /* .cyber_carousel .carousel-indicators button:hover{
@@ -179,6 +180,7 @@ header nav .nav-item:hover .nav-link{
     color: #35a22c;
 }
 
+
 /* available css */
 .available{
     background-image: url(../img/3.jpg);
@@ -205,6 +207,78 @@ header nav .nav-item:hover .nav-link{
     background-color: black;
     border: 1px solid white;
 }
+
+/* Award css */
+
+.award{
+    padding: 70px 0;
+    position: relative;
+}
+
+.award .award_bg{
+    background-image: url(../img/memphis_3.png);
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    position: absolute;
+    background-size: 50% auto;
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.award .award_left h2{
+    font-size: 36px;
+}
+
+.award p {
+    color: #585858;
+    line-height: 24px;
+}
+
+.award .award_left{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px!important
+}
+
+
+/* footer css */
+footer {
+    background-color: #222;
+}
+
+footer .footer_social a{
+    color: #aaa;
+}
+
+footer .footer_social i{
+    width: 42px;
+    height: 42px;
+    line-height: 42px;
+    border-radius: 50%;
+    border: 1px solid #454545;
+    transition: all .5s;
+}
+
+footer .footer_social a:hover i{
+    border: 1px solid #35a22c;
+    color: #35a22c;
+}
+
+footer .footer_copy {
+    color: #aaa;
+}
+
+footer .footer_copy a{
+    text-decoration: none;
+    color: #aaa;
+    transition: all 0.5s;
+}
+
+footer .footer_copy a:hover{
+    color: #35a22c;
+}
+
 
 @media screen and (max-width: 576px) {
     .cyber_carousel .carousel-inner h2{
