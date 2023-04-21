@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header css */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+}
+
+
+header nav .nav-link.active{
+    color: green !important;
+}
+
+header nav .nav-item {
+    position: relative;
+}
+
+header nav .nav-item::before{
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background-color: green;
+    bottom: 0;
+    left: 0;
+}
+
+header nav .nav-item .nav-link{
+    transition: all 0.5s;
+}
+
+header nav .nav-item:first-child::before{
+    width: 100%;
+}
+
+header nav .nav-item:hover::before{
+    width: 100%;
+}
+
+header nav .nav-item:hover .nav-link{
+    color: green !important;
+}
+
+/* Main css */
+
+/* Cyber carousel css */
+
+.cyber_carousel .carousel-inner{
+    height: 100vh;
+}
+
+.cyber_carousel .carousel-item{
+    height: 100%;
+}
+
+.cyber_carousel .carousel-inner img{
+    /* filter: brightness(0.8) grayscale(20%); */
+    /* width: 100%; */
+    height: 100%;
+}
+
+.cyber_carousel .carousel-inner h2{
+    font-size: 70px;
+}
+
+.cyber_carousel .carousel-item{
+    position: relative;
+    
+}
+
+/* .cyber_carousel .carousel-inner .carousel-item .carousel_content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+} */
+
+.cyber_carousel .carousel-item .carousel_content{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    z-index: 10;
+    /* text-align: center; */
+    flex-direction: column;
+    background-color: rgba(39, 43, 54, 0.5);
+
+}
+
+.cyber_carousel .carousel-item .carousel_content img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+
+.cyber_carousel .carousel-indicators button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+/* .cyber_carousel .carousel-indicators button:hover{
+    background-color: red;
+} */
+
+.cyber_carousel .carousel-indicators button.active{
+    background-color: green;
+}
+
+/* Project */
+.cyber_project .project_content ul{
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    border: none;
+}
+
+
+.cyber_project .project_content .nav-item button.active{
+    background-color: #35a22c;
+    color: white;
+    border: 1px solid #35a22c;
+}
+
+.cyber_project .project_content .nav-item button{
+    border: 1px solid black;
+    color: black;
+    border-radius: 5px;
+}
+
+.cyber_project .project_content .project_item img{
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+.cyber_project .project_content .project_item{
+    /* border: 1px solid black; */
+    border-radius: 16px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+}
+
+.cyber_project .project_content .project_item .project_text{
+    text-align: center;
+    padding: 20px 30px 30px 30px;
+    transition: all 0.3s;
+    border-bottom-right-radius: 16px;
+    border-bottom-left-radius: 16px;
+    border: 1px solid transparent;
+    border-top: none;
+}
+
+.cyber_project .project_content .project_item:hover .project_text{
+    border: 1px solid #35a22c;
+    border-top: none;
+}
+
+.cyber_project .project_content .project_item h3{
+    transition: all 0.3s;
+    font-size: 20px;
+}
+
+.cyber_project .project_content .project_item:hover h3{
+    color: #35a22c;
+}
+
+/* available css */
+.available{
+    background-image: url(../img/3.jpg);
+    background-attachment: fixed;
+    position: relative;
+}
+
+.available .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(7,10,12,.72);
+}
+
+.available .available_content .avai_item{
+    background-color: rgba(255, 255, 255, 0.224);
+    border: 1px solid transparent;
+    transition: all 0.5s;
+}
+
+.available .available_content .avai_item:hover{
+    background-color: black;
+    border: 1px solid white;
+}
+
+@media screen and (max-width: 576px) {
+    .cyber_carousel .carousel-inner h2{
+        font-size: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 992px) {
+    .cyber_carousel .carousel-inner h2{
+        font-size: 40px;
+    }
+    
+}
